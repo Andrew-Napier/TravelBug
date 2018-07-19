@@ -52,8 +52,6 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Maps" id="mOI-FS-AaM"/>
-                    <connections>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,6 +182,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="JEX-9P-axG" kind="showDetail" id="yhj-Zz-dog"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="lKX-wb-ZKv" style="IBUITableViewCellStyleDefault" id="L7x-Vh-64J">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -296,6 +297,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="2Iq-s8-NXx"/>
         <segue reference="Gjt-w1-Xnh"/>
+        <segue reference="yhj-Zz-dog"/>
     </inferredMetricsTieBreakers>
 </document>
