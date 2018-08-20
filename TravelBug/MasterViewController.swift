@@ -10,7 +10,7 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: MapDetailViewController? = nil
     var objects = [Any]()
 
 
@@ -54,6 +54,16 @@ class MasterViewController: UITableViewController {
     }
 
     // MARK: - Segues
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let navController = segue.destination as? UINavigationController,
+            let viewController = navController.topViewController else {
+                fatalError("Expected Navigation Controller")
+        }
+        
+        viewController.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+        viewController.navigationItem.leftItemsSupplementBackButton = true
+    }
 
 
     // MARK: - Table View

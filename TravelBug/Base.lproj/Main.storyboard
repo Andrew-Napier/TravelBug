@@ -29,7 +29,7 @@
         <!--Maps-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
-                <viewController storyboardIdentifier="mapsPage" title="Maps" id="JEX-9P-axG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapsPage" title="Maps" id="JEX-9P-axG" customClass="MapDetailViewController" customModule="TravelBug" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,7 +147,6 @@
                     <toolbarItems/>
                     <connections>
                         <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
-                        <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="Tll-UG-LXB"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
@@ -183,7 +182,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="JEX-9P-axG" kind="showDetail" id="yhj-Zz-dog"/>
+                                            <segue destination="vC3-pB-5Vb" kind="showDetail" id="ko9-Op-o2w"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="lKX-wb-ZKv" style="IBUITableViewCellStyleDefault" id="L7x-Vh-64J">
@@ -287,6 +286,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bgZ-2b-eb9">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="s0u-oU-wWx" kind="relationship" relationship="rootViewController" id="oUT-hq-O1C"/>
                     </connections>
@@ -297,8 +299,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2Iq-s8-NXx"/>
         <segue reference="Gjt-w1-Xnh"/>
-        <segue reference="yhj-Zz-dog"/>
     </inferredMetricsTieBreakers>
 </document>
