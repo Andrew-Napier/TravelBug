@@ -6,20 +6,17 @@
 //  Copyright © 2018 Andrew Napier. All rights reserved.
 //
 
+import MapKit
 import UIKit
 
 class MapDetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    @IBOutlet weak var mapView: MKMapView!
+    
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
-        }
+        //mapView.set
     }
 
     override func viewDidLoad() {
