@@ -40,9 +40,13 @@
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZg-83-mkT">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="548.5"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="364" id="zZQ-tr-deV"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="HRb-ry-qOz" appends="YES" id="6zP-ur-2RW"/>
+                                        </connections>
                                     </mapView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKe-kL-osa">
                                         <rect key="frame" x="0.0" y="548.5" width="343" height="42.5"/>
@@ -74,10 +78,16 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Maps" id="mOI-FS-AaM"/>
                     <connections>
+                        <outlet property="dropPinGesture" destination="HRb-ry-qOz" id="Fic-2B-Arb"/>
                         <outlet property="mapView" destination="ZZg-83-mkT" id="pu1-BT-9gm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="HRb-ry-qOz">
+                    <connections>
+                        <action selector="dropPin:" destination="JEX-9P-axG" id="f9t-u3-XxQ"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2496.8000000000002" y="415.14242878560725"/>
         </scene>
