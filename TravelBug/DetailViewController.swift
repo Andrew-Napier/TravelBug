@@ -63,9 +63,16 @@ class MapDetailViewController: UIViewController {
     }
     
     @IBAction func dropPin(_ sender: Any) {
-        print("Change this to be the coordinate where the map was pressed")
-        let annotation = MKPlacemark(coordinate: locationManager?.location?.coordinate ?? CLLocationCoordinate2D())
+        guard let gesture = sender as? UILongPressGestureRecognizer else {
+            return
+        }
+        let longPressLocation = gesture.location(in: mapView)
+        let pressedCoordinates = mapView.convert(longPressLocation, toCoordinateFrom: mapView)
+        let annotation = MKPlacemark(coordinate: pressedCoordinates)
+        
+        mapView.removeAnnotations(mapView.annotations)
         mapView.addAnnotation(annotation)
+        
         // add delegate to display the pin on the map.
     }
 }
