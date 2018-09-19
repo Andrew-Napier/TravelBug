@@ -16,6 +16,7 @@
 		49274FA920DA51A6002F0C6A /* TravelBugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49274FA820DA51A6002F0C6A /* TravelBugTests.swift */; };
 		49D9345820FF3E760043753D /* Currency.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49D9345720FF3E760043753D /* Currency.jpg */; };
 		49D9345A20FF3F440043753D /* Blur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49D9345920FF3F440043753D /* Blur.jpg */; };
+		49F49DA321523F6E007DEDBB /* TipsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F49DA221523F6E007DEDBB /* TipsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		49274FAA20DA51A6002F0C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49D9345720FF3E760043753D /* Currency.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Currency.jpg; sourceTree = "<group>"; };
 		49D9345920FF3F440043753D /* Blur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blur.jpg; sourceTree = "<group>"; };
+		49F49DA221523F6E007DEDBB /* TipsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				49274F9320DA51A5002F0C6A /* MasterViewController.swift */,
 				49274F9520DA51A5002F0C6A /* DetailViewController.swift */,
 				49274F9720DA51A5002F0C6A /* Main.storyboard */,
+				49F49DA221523F6E007DEDBB /* TipsDetailViewController.swift */,
 				49274F9A20DA51A6002F0C6A /* Assets.xcassets */,
 				49274F9C20DA51A6002F0C6A /* LaunchScreen.storyboard */,
 				49274F9F20DA51A6002F0C6A /* Info.plist */,
@@ -219,6 +222,7 @@
 				49274F9620DA51A5002F0C6A /* DetailViewController.swift in Sources */,
 				49274F9420DA51A5002F0C6A /* MasterViewController.swift in Sources */,
 				49274F9220DA51A5002F0C6A /* AppDelegate.swift in Sources */,
+				49F49DA321523F6E007DEDBB /* TipsDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
